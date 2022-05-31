@@ -1,0 +1,15 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#hero {
+    background-image: url('../Img/bgAtas.png') !important;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#about {
+    background-image: url('../Img/bgTengah.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
