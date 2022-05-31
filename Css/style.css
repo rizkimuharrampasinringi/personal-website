@@ -1,3 +1,7 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -14,23 +18,51 @@ body {
     background-size: cover;
 }
 
-.navbar-fixed { 
-   @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50; 
-   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2); 
- } 
-  
- .hamburger-line { 
-   @apply my-2 block h-[2px] w-[30px] bg-dark dark:bg-white; 
- } 
-  
- .hamburger-active > span:nth-child(1) { 
-   @apply rotate-45; 
- } 
-  
- .hamburger-active > span:nth-child(2) { 
-   @apply scale-0; 
- } 
-  
- .hamburger-active > span:nth-child(3) { 
-   @apply -rotate-45; 
- }
+#services{
+    background-image: url('../Img/bgTengah.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-fixed {
+    /* @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm ; */
+    z-index: 9999;
+    /* --tw-bg-opacity: 1; */
+    background-color: rgba(255, 255, 255, 1);
+    /* --tw-bg-opacity: 0.7; */
+    /* background-color: rgba(255, 255, 255, .9); */
+    opacity: 0.7;
+    /* --tw-backdrop-blur: blur(4px); */
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+  }
+
+.hamburger-line {
+  margin-top: 0.5rem/* 8px */;
+  margin-bottom: 0.5rem/* 8px */;
+  display: block;
+  height: 2px;
+  width: 30px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 78 74 / var(--tw-bg-opacity));
+}
+
+.hamburger-active > span:nth-child(1) {
+  /* --tw-rotate: 45deg;
+  transform: var(--tw-transform); */
+  transform: rotate(45deg);
+}
+
+.hamburger-active > span:nth-child(2) {
+  /* --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: var(--tw-transform); */
+  transform: scaleX(0);
+  transform: scaleY(0);
+}
+
+.hamburger-active > span:nth-child(3) {
+  /* --tw-rotate: -45deg;
+  transform: var(--tw-transform); */
+  transform: rotate(-45deg);
+}
