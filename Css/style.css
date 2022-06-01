@@ -30,8 +30,20 @@ body {
     background-size: cover;
 }
 
-#Sertifikat{
+#sertifikat{
   background-image: url('../Img/bgTengah.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolio{
+  background-image: url('../Img/bgTengah.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact{
+  background-image: url('../Img/bgBawah.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
