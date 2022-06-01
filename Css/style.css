@@ -30,6 +30,12 @@ body {
     background-size: cover;
 }
 
+#Sertifikat{
+  background-image: url('../Img/bgTengah.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar-fixed {
     /* @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm ; */
     z-index: 9999;
