@@ -31,8 +31,9 @@
   </script>
 </head>
 <body>
+  <div id="pembungkus" class="w-full relative max-w-costum">
   <!-- Header Start -->
-  <header class="fixed top-0 left-0 z-10 flex justify-center w-full items-center bg-transparent" id="header">
+  <header class="fixed top-0 left-0 z-10 flex justify-center items-center bg-transparent" id="header">
     <div class="container px-3 md:pl-10 md:pr-5 lg:pl-28 lg:pr-16"">
       <div class="relative flex items-center justify-between">
         <div class="px-4">
@@ -71,18 +72,6 @@
               <li class="group">
                 <a href="#contact" class="mx-5 flex py-2 text-base text-teal-800 group-hover:text-teal-500 ">Contact</a>
               </li>
-              <!-- <li class="mt-3 flex items-center pl-8 lg:mt-0">
-                <div class="flex">
-                  <span class="mr-2 text-sm text-slate-500">light</span>
-                  <input type="checkbox" class="hidden" id="dark-toggle" />
-                  <label for="dark-toggle">
-                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
-                    </div>
-                  </label>
-                  <span class="ml-2 text-sm text-slate-500">dark</span>
-                </div>
-              </li> -->
             </ul>
           </nav>
         </div>
@@ -92,7 +81,7 @@
   <!-- Header End -->
 
   <!-- section hero start -->
-  <section id="hero" class="py-36 flex justify-center bg-center">
+  <section id="hero" class="py-36 w-full flex justify-center bg-center">
     <div class="container px-3 md:pl-10 md:pr-5 lg:pl-28 lg:pr-16">
       <div class="p-3 w-full flex flex-wrap items-center justify-between">
         <div id="hero_main" class="w-full md:w-1/2 text-teal-900">
@@ -102,8 +91,8 @@
           <p class="text-xl mb-10" id="note">Tetep Ngoding Walaupun Copy Paste Brow</p>
           <a href="#about" id="buttonHeader" class="inline-block rounded-full px-4 font-semibold py-2 text-slate-800 bg-teal-500 hover:opacity-80 hover:shadow-lg transition duration-200 ease-in-out"> About Me 🤔</a>
         </div>
-        <div id="hero_img" class="w-full mt-5 md:w-1/2">
-          <img src="Img/fp1.png" alt="" width="250" class="mx-auto border-b-2 md border-teal-500 lg:mx-0 lg:ml-auto">
+        <div class="w-full mt-5 md:w-1/2 aos-init aos-animate" id="div_img_hero">
+          <img src="Img/fp1.png" id="hero_img"  alt="" width="250" class="mx-auto border-b-2 md border-teal-500 lg:mx-0 lg:ml-auto">
         </div>
       </div>
     </div>
@@ -111,13 +100,13 @@
   <!-- section hero end -->
 
   <!-- section about start -->
-  <section id="about" class="bg-center flex justify-center py-20">
+  <section id="about" class="bg-center w-full flex justify-center py-20">
     <div class="container px-3 md:pl-10 md:pr-5 lg:pl-28 lg:pr-16"">
       <h2 class="text-3xl font-medium text-teal-500 text-center" data-aos="fade-down" data-aos-duration="1000">About</h2>
       <p class="text-teal-900 font-medium mb-5 text-center" data-aos="fade-down" data-aos-duration="1000">🤔🤔Tentang Saya ??</p>
       <div class="p-3 w-full flex flex-wrap items-center justify-between">
-        <div class="about-profile w-full md:w-1/2">
-          <img src="Img/fp3.png" alt="" width="300" class="mx-auto border-b-2 border-teal-500 lg:mx-0 lg:mr-auto">
+        <div class="about-profile w-full md:w-1/2" id="div_img_about">
+          <img src="Img/fp3.png" id="about_img" alt="" width="300" class="mx-auto border-b-2 border-teal-500 lg:mx-0 lg:mr-auto">
         </div>
         <div class="about-main mb-16 mt-5 md:w-1/2">
           <h2 class="text-2xl text-teal-500" data-aos="fade-up">Mending Turu</h2>
@@ -206,7 +195,7 @@
   <!-- section about end -->
 
   <!-- section services start -->
-  <section id="services" class="bg-center py-20 flex justify-center">
+  <section id="services" class="bg-center w-full py-20 flex justify-center">
     <div class="container px-3 md:pl-10 md:pr-5 lg:pl-28 lg:pr-16">
       <h2 class="text-3xl font-medium text-teal-500 text-center" data-aos="fade-up" data-aos-delay="50">Services</h2>
       <p class="text-teal-900 font-medium mb-5 text-center" data-aos="fade-up" data-aos-delay="100">🤔Apa Yang Saya Bisa🤔?</p>
@@ -256,7 +245,7 @@
   <!-- section services end -->
 
   <!-- section komunitas start-->
-  <section id="komunitas" class="bg-center py-20 flex justify-center">
+  <section id="komunitas" class="bg-center w-full py-20 flex justify-center">
     <div class="container flex justify-center items-start">
       <div class="container px-3 md:pl-10 md:pr-5 lg:pl-28 lg:pr-16">
         <h2 class="text-3xl font-medium text-teal-500 text-center" data-aos="fade-up" data-aos-delay="50">Komunitas</h2>
@@ -283,13 +272,15 @@
           <div class="w-full mt-20 text-center">
             <p class="text-teal-500 text-xl font-medium text-center mt-5" data-aos="fade-up" data-aos-delay="400">Dan Untuk Lebih Lanjutnya Silahkan Cek Website INI</p>
             
-            <div id="content-isci" data-aos="fade-up" data-aos-delay="450" class="transition duration-300 ease-in-out flex justify-center w-full h-max my-1 p-2 mx-auto md:w-72 ">
-              <div class="p-2 md:h-72 rounded-2xl h-max flex justify-center">
-                <div class="rounded-2xl border-1 border-teal-500 overflow-hidden shadow-md pb-2">
-                  <img src="Img/HTML_certificate.jpg" alt="" class="">
-                  <p class="text-teal-900 font-medium mx-2 mt-2">
-                    <a href="http://isci-team.000webhostapp" target="_blank" class="text-blue-900 font-medium mx-auto">Klik Ini Untuk Menuju Ke Link Web ISCI</a>
-                  </p>
+            <div id="content-isci" data-aos="fade-up" data-aos-delay="450" class="transition duration-300 ease-in-out flex justify-center w-full h-max my-1 px-2 pt-2 mx-auto md:w-72 ">
+              <div class="px-2 pt-2 md:h-72 rounded-2xl h-max flex justify-center">
+                <div class="rounded-2xl border-1 cursor-pointer hover:opacity-50 transition all duration-200 ease-in-out border-teal-500 overflow-hidden shadow-md ">
+                  <img src="Img/ISCI.png" alt="" class="">
+                  <div class="bg-white mb-2">
+                    <p class="text-teal-900 font-medium mx-2 mt-2">
+                      <a href="http://isci-team.000webhostapp.com" target="_blank" class="text-blue-900 font-medium mx-auto">Klik Ini Untuk Menuju Ke Link Web ISCI</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -301,7 +292,7 @@
   <!-- section komunitas End -->
 
     <!-- section sertifikat start -->
-    <section id="sertifikat" class="bg-center py-20 flex justify-center">
+    <section id="sertifikat" class="bg-center py-20 w-full flex justify-center">
       <div class="container px-3 md:pl-10 md:pr-5 lg:pl-28 lg:pr-16">
         <h2 class="text-3xl font-medium text-teal-500 text-center" data-aos="fade-up" data-aos-delay="50">Certificate</h2>
         <p class="text-teal-900 font-medium mb-5 text-center" data-aos="fade-up" data-aos-delay="100">🤔Apa Yang Saya Bisa🤔?</p>
@@ -309,7 +300,7 @@
   
           <div id="content-sertifikat" data-aos="fade-up" data-aos-delay="150" class="transition duration-300 ease-in-out w-full h-max p-1 md:w-72">
             <div class="md:h-72 rounded-2xl h-max">
-              <div class="rounded-2xl border-1 border-teal-500 overflow-hidden shadow-md pb-2">
+              <div class="rounded-2xl  cursor-pointer hover:opacity-50 transition all duration-200 ease-in-out border-1 border-teal-500  overflow-hidden shadow-md pb-2">
                 <img src="Img/HTML_certificate.jpg" alt="" class="">
                 <p class="text-teal-900 font-medium ml-2 mt-2">Sertifikat Hasil Course DI SoloLearn</p>
               </div>
@@ -318,7 +309,7 @@
   
           <div id="content-sertifikat" data-aos="fade-up" data-aos-delay="250" class="transition duration-300 ease-in-out h-max p-1 md:w-72">
             <div class="md:h-72 rounded-2xl w-full h-max ">
-              <div class="rounded-2xl border-1 border-teal-500 overflow-hidden shadow-md pb-2">
+              <div class="rounded-2xl  cursor-pointer hover:opacity-50 transition all duration-200 ease-in-out border-1 border-teal-500 overflow-hidden shadow-md pb-2">
                 <img src="Img/CSS_certificate.jpg" alt="" class="">
                 <p class="text-teal-900 font-medium ml-2 mt-2">Sertifikiat Hasil Course DI SoloLearn</p>
               </div>
@@ -327,7 +318,7 @@
   
           <div id="content-sertifikat" data-aos="fade-up" data-aos-delay="350" class="transition duration-300 ease-in-out h-max p-1 md:w-72">
             <div class="md:h-72 rounded-2xl w-full h-max ">
-              <div class="rounded-2xl border-1 border-teal-500 overflow-hidden shadow-md pb-2">
+              <div class="rounded-2xl  cursor-pointer hover:opacity-50 transition all duration-200 ease-in-out border-1 border-teal-500 overflow-hidden shadow-md pb-2">
                 <img src="Img/BrightChamps_certificate.jpg" alt="" class="">
                 <p class="text-teal-900 font-medium ml-2 mt-2">Sertifikat Course DI BrightChamps</p>
               </div>
@@ -336,7 +327,7 @@
 
           <div id="content-sertifikat" data-aos="fade-up" data-aos-delay="450" class="transition duration-300 ease-in-out h-max p-1 md:w-72">
             <div class="md:h-72 rounded-2xl w-full h-max ">
-              <div class="rounded-2xl border-1 border-teal-500 overflow-hidden shadow-md pb-2">
+              <div class="rounded-2xl  cursor-pointer hover:opacity-50 transition all duration-200 ease-in-out border-1 border-teal-500 overflow-hidden shadow-md pb-2">
                 <img src="Img/Robotika_certificate.jpg" alt="" class="">
                 <p class="text-teal-900 font-medium ml-2 mt-2">Sertifikat Robotika</p>
               </div>
@@ -345,7 +336,7 @@
 
           <div id="content-sertifikat" data-aos="fade-up" data-aos-delay="550" class="transition duration-300 ease-in-out h-max p-1 md:w-72">
             <div class="md:h-72 rounded-2xl w-full h-max ">
-              <div class="rounded-2xl border-1 border-teal-500 overflow-hidden shadow-md pb-2">
+              <div class="rounded-2xl  cursor-pointer hover:opacity-50 transition all duration-200 ease-in-out border-1 border-teal-500 overflow-hidden shadow-md pb-2">
                 <img src="Img/MYRES_30_BESAR_certificate.jpg" alt="" class="">
                 <p class="text-teal-900 font-medium ml-2 mt-2">Sertifikat MYRES</p>
               </div>
@@ -358,16 +349,16 @@
     <!-- section sertifikat end -->
 
     <!-- section portfolio start -->
-    <section id="portfolio" class="bg-center py-20 flex justify-center">
+    <section id="portfolio" class="bg-center py-20 w-full flex justify-center">
       <div class="container px-3 md:pl-10 md:pr-5 lg:pl-28 lg:pr-16">
         <h2 class="text-3xl font-medium text-teal-500 text-center" data-aos="fade-up" data-aos-delay="50">Portfolio</h2>
         <p class="text-teal-900 font-medium mb-5 text-center" data-aos="fade-up" data-aos-delay="100">🤔Project Project Saya</p>
-        <div class="p-3 w-full flex flex-wrap items-center justify-center">
+        <div class="p-3 w-full flex flex-wrap items-center justify-center mb-16">
   
           <div id="content-portfolio" data-aos="fade-up" data-aos-delay="150" class="transition duration-300 ease-in-out w-full h-max my-1 p-2 md:w-72">
             <div class="p-2 md:h-72 rounded-2xl h-max">
-              <div class="rounded-2xl border-1 border-teal-500 overflow-hidden shadow-md pb-2">
-                <img src="Img/HTML_certificate.jpg" alt="" class="">
+              <div class="rounded-2xl  cursor-pointer hover:opacity-50 transition all duration-200 ease-in-out border-1 border-teal-500 overflow-hidden shadow-md pb-2">
+                <img src="Img/bs.jpg" alt="" class="">
                 <p class="text-teal-900 font-medium mx-2 mt-2">Website Portfolio Dengan Menggunakan Teknik Boostrap 5</p>
               </div>
             </div>
@@ -375,8 +366,8 @@
 
           <div id="content-portfolio" data-aos="fade-up" data-aos-delay="250" class="transition duration-300 ease-in-out w-full h-max my-1 p-2 md:w-72">
             <div class="p-2 md:h-72 rounded-2xl h-max">
-              <div class="rounded-2xl border-1 border-teal-500 overflow-hidden shadow-md pb-2">
-                <img src="Img/HTML_certificate.jpg" alt="" class="">
+              <div class="rounded-2xl  cursor-pointer hover:opacity-50 transition all duration-200 ease-in-out border-1 border-teal-500 overflow-hidden shadow-md pb-2">
+                <img src="Img/bs.jpg" alt="" class="">
                 <p class="text-teal-900 font-medium mx-2 mt-2">Website About Me</p>
               </div>
             </div>
@@ -388,7 +379,7 @@
     <!-- section portfolio end -->
 
     <!-- section contact start -->
-    <section id="contact" class="py-20 flex justify-center">
+    <section id="contact" class="py-20 w-full flex justify-center">
       <div class="container">
         <div class="judul">
           <h2 class="text-3xl font-medium text-teal-500 text-center" data-aos="fade-up" data-aos-delay="50">Contact</h2>
@@ -396,8 +387,8 @@
         </div>
         <div class="flex flex-wrap items-center px-3 md:pl-10 md:pr-5 lg:pl-28 lg:pr-16">
           <div class="w-full md:w-1/2 lg:w-1/3 mt-20" data-aos="fade-right" data-aos-delay="150">
-            <div class="contact-profile md:w-1/2">
-              <img src="Img/fp2.png" alt="" width="200" class="mx-auto border-b-2 border-teal-500 lg:mx-0 lg:mr-auto">
+            <div class="contact-profile md:w-1/2" id="div_img_contact">
+              <img src="Img/fp2.png" id="contact_img" alt="" width="200" class="mx-auto lg:mx-0 lg:mr-auto">
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-2/3 mt-20">
@@ -427,7 +418,7 @@
     <!-- section contact end -->
 
     <!-- Footer Start -->
-    <footer class="bg-slate-900 py-20">
+    <footer class="bg-slate-900 py-20 w-full">
       <div class="container">
         <div class="flex flex-wrap w-full" data-aos="fade-up" data-aos-delay="50">
           <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
@@ -560,6 +551,14 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- back to top start -->
+    <a href="#hero" class="hidden justify-center items-center h-14 w-14 bg-teal-500 rounded-full fixed z-50 bottom-4 right-4 p-4 hover:animate-pulse" id="to-top">
+      <span class="block h-5 w-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+    <!-- back to tap end -->
+
+  </div>
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -576,7 +575,9 @@
       gsap.from('#newbie', {duration: 1, x: -50, opacity: 0, delay: 1.5, ease:'back'});
       gsap.from('#note', {duration: 1, x: -50, opacity: 0, delay: 2, ease:'back'});
       gsap.from('#buttonHeader', {duration: 1, x: -50, opacity: 0, delay: 2.5, ease:'back'});
-
+      gsap.from('#div_img_hero', {duration: 1, y: -30, opacity: 0, delay: 0.5, ease:'back'});
+      gsap.from('#div_img_about', {duration: 1, y: -30, opacity: 0, delay: 0.5, ease:'back'});
+      gsap.from('#div_img_contact', {duration: 1, y: -30, opacity: 0, delay: 0.5, ease:'back'});
     </script>
 
     <!-- my Js -->
