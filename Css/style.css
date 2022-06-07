@@ -6,27 +6,87 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* header */
 #header {
   width: 100%;
 }
 
+.navbar-fixed {
+  /* @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm ; */
+  position: fixed;
+  z-index: 9999;
+  /* --tw-bg-opacity: 1; */
+  background-color: rgba(255, 255, 255, 1);
+  /* --tw-bg-opacity: 0.7; */
+  /* background-color: rgba(255, 255, 255, .9); */
+  opacity: 0.7;
+  /* --tw-backdrop-blur: blur(4px); */
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-line {
+margin-top: 0.5rem/* 8px */;
+margin-bottom: 0.5rem/* 8px */;
+display: block;
+height: 2px;
+width: 30px;
+--tw-bg-opacity: 1;
+background-color: rgb(19 78 74 / var(--tw-bg-opacity));
+}
+
+.hamburger-active > span:nth-child(1) {
+/* --tw-rotate: 45deg;
+transform: var(--tw-transform); */
+transform: rotate(45deg);
+}
+
+.hamburger-active > span:nth-child(2) {
+/* --tw-scale-x: 0;
+--tw-scale-y: 0;
+transform: var(--tw-transform); */
+transform: scaleX(0);
+transform: scaleY(0);
+}
+
+.hamburger-active > span:nth-child(3) {
+/* --tw-rotate: -45deg;
+transform: var(--tw-transform); */
+transform: rotate(-45deg);
+}
+/* end header */
+
+/* hero */
 #hero {
     background-image: url('../Img/bgAtas.png') !important;
     background-repeat: no-repeat;
     background-size:cover;
 }
 
+#hero_img {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+/* end hero */
+
+/* about */
 #about {
     background-image: url('../Img/bgTengah.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* end about */
 
+/* services */
 #services{
     background-image: url('../Img/bgTengah.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#about_img{
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+/* end services */
 
 #komunitas{
     background-image: url('../Img/bgTengah.png');
@@ -34,35 +94,55 @@ body {
     background-size: cover;
 }
 
+/* sertifikat */
 #sertifikat{
   background-image: url('../Img/bgTengah.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* end sertifikat */
 
+/* portfolio */
 #portfolio{
   background-image: url('../Img/bgTengah.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.kategori1 .checkbox:checked ~ .name {
+  color: #14b8a6;
+}
+
+.kategori2 .checkbox:checked ~ .name {
+  color: #14b8a6;
+}
+
+.name:hover {
+  color: #83cec5;
+}
+
+#content-portfolio1 {
+  transition: all .2s ease-in-out;
+}
+
+#content-portfolio2 {
+  transition: all .2s ease-in-out;
+}
+/* end portfolio */
+
+/* contact */
 #contact{
   background-image: url('../Img/bgBawah.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#hero_img {
-  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
-}
-
-#about_img{
-  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
-}
-
 #contact_img{
   animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
 }
+/* end contcat */
+
+
 
 @-webkit-keyframes up-down {
   0% {
@@ -79,48 +159,4 @@ body {
   100% {
     transform: translateY(-20px);
   }
-}
-
-.navbar-fixed {
-    /* @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm ; */
-    position: fixed;
-    z-index: 9999;
-    /* --tw-bg-opacity: 1; */
-    background-color: rgba(255, 255, 255, 1);
-    /* --tw-bg-opacity: 0.7; */
-    /* background-color: rgba(255, 255, 255, .9); */
-    opacity: 0.7;
-    /* --tw-backdrop-blur: blur(4px); */
-    backdrop-filter: blur(8px);
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
-  }
-
-.hamburger-line {
-  margin-top: 0.5rem/* 8px */;
-  margin-bottom: 0.5rem/* 8px */;
-  display: block;
-  height: 2px;
-  width: 30px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(19 78 74 / var(--tw-bg-opacity));
-}
-
-.hamburger-active > span:nth-child(1) {
-  /* --tw-rotate: 45deg;
-  transform: var(--tw-transform); */
-  transform: rotate(45deg);
-}
-
-.hamburger-active > span:nth-child(2) {
-  /* --tw-scale-x: 0;
-  --tw-scale-y: 0;
-  transform: var(--tw-transform); */
-  transform: scaleX(0);
-  transform: scaleY(0);
-}
-
-.hamburger-active > span:nth-child(3) {
-  /* --tw-rotate: -45deg;
-  transform: var(--tw-transform); */
-  transform: rotate(-45deg);
 }

@@ -31,3 +31,29 @@ window.onscroll = function () {
       navMenu.classList.add('hidden');
     }
   });
+
+
+// kategori
+// Ambil
+const content_portfolio1 = document.getElementById('content-portfolio1')
+const content_portfolio2 = document.getElementById('content-portfolio2')
+
+const item1 = document.getElementById('1')
+item1.addEventListener('click', () => {
+    if (item1.checked) {
+      content_portfolio1.classList.remove('hidden')
+      content_portfolio2.classList.remove('hidden')
+    }
+    
+})
+
+const item2 = document.getElementById('2')
+item2.addEventListener('click', () => {
+    if (item2.checked) {
+      content_portfolio2.classList.remove('hidden')
+      content_portfolio1.classList.add('hidden')
+    }
+    
+})
+
+// end kategori
