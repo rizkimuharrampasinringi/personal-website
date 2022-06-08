@@ -1,13 +1,10 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-html{
+/* html{
   overflow-x: hidden;
-}
+} */
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
 }
 
 /* header */
@@ -20,9 +17,9 @@ body {
   position: fixed;
   z-index: 9999;
   /* --tw-bg-opacity: 1; */
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
   /* --tw-bg-opacity: 0.7; */
-  /* background-color: rgba(255, 255, 255, .9); */
+  /* background-color: rgba(255, 255, 255,); */
   opacity: 0.7;
   /* --tw-backdrop-blur: blur(4px); */
   backdrop-filter: blur(8px);
@@ -35,8 +32,9 @@ margin-bottom: 0.5rem/* 8px */;
 display: block;
 height: 2px;
 width: 30px;
---tw-bg-opacity: 1;
-background-color: rgb(19 78 74 / var(--tw-bg-opacity));
+/* --tw-bg-opacity: 1; */
+opacity: 1;
+background-color: rgba(19, 78, 74, 1);
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -62,9 +60,9 @@ transform: rotate(-45deg);
 
 /* hero */
 #hero {
-    background-image: url('../Img/bgAtas.png') !important;
-    background-repeat: no-repeat;
-    background-size:cover;
+  background-image: url('../Img/bgAtas.png') !important;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 #hero_img {
@@ -125,13 +123,41 @@ transform: rotate(-45deg);
   color: #83cec5;
 }
 
-#content-portfolio1 {
-  transition: all .2s ease-in-out;
+
+.portfolio-item-hide {
+  display: none;
+  animation: itemDown 0.5s ease;
 }
 
-#content-portfolio2 {
-  transition: all .2s ease-in-out;
+.portfolio-item-show {
+  display: block;
+  animation: showItem 0.5s ease;
 }
+
+@keyframes showItem {
+  0% {
+    transform: scale(0.0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes itemDown {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.0);
+    opacity: 0;
+  } 
+}
+
 /* end portfolio */
 
 /* contact */
@@ -148,6 +174,10 @@ transform: rotate(-45deg);
 
 
 
+
+
+
+/* keyframes */
 @-webkit-keyframes up-down {
   0% {
     transform: translateY(20px);
@@ -164,3 +194,4 @@ transform: rotate(-45deg);
     transform: translateY(-20px);
   }
 }
+/* end keyframes */

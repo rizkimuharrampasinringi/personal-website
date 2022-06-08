@@ -37,21 +37,41 @@ window.onscroll = function () {
 // Ambil
 const content_portfolio1 = document.getElementById('content-portfolio1')
 const content_portfolio2 = document.getElementById('content-portfolio2')
+const content_portfolio3 = document.getElementById('content-portfolio3')
 
 const item1 = document.getElementById('1')
 item1.addEventListener('click', () => {
     if (item1.checked) {
-      content_portfolio1.classList.remove('hidden')
-      content_portfolio2.classList.remove('hidden')
+      content_portfolio1.classList.add('portfolio-item-show')
+      content_portfolio3.classList.add('portfolio-item-show')
+      content_portfolio2.classList.add('portfolio-item-show')
+      content_portfolio1.classList.remove('portfolio-item-hide')
+      content_portfolio3.classList.remove('portfolio-item-hide')
+      content_portfolio2.classList.remove('portfolio-item-hide')
     }
-    
 })
 
 const item2 = document.getElementById('2')
 item2.addEventListener('click', () => {
     if (item2.checked) {
-      content_portfolio2.classList.remove('hidden')
-      content_portfolio1.classList.add('hidden')
+      content_portfolio1.classList.add('portfolio-item-show')
+      content_portfolio1.classList.remove('portfolio-item-hide')
+      content_portfolio2.classList.add('portfolio-item-hide')
+      content_portfolio2.classList.remove('portfolio-item-show')
+      content_portfolio3.classList.add('portfolio-item-show')
+      content_portfolio3.classList.remove('portfolio-item-hide')
+    }
+})
+
+const item3 = document.getElementById('3')
+item3.addEventListener('click', () => {
+    if (item3.checked) {
+      content_portfolio2.classList.add('portfolio-item-show')
+      content_portfolio1.classList.remove('portfolio-item-show')
+      content_portfolio3.classList.remove('portfolio-item-show')
+      content_portfolio2.classList.remove('portfolio-item-hide')
+      content_portfolio1.classList.add('portfolio-item-hide')
+      content_portfolio3.classList.add('portfolio-item-hide')
     }
     
 })
