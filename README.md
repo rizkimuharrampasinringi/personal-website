@@ -9,3 +9,6 @@ Tailwind
 Html
 Css
 Js
+Scss
+AOS
+GSAP

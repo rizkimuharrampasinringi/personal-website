@@ -1,131 +1,5 @@
-/* html{
+html {
   overflow-x: hidden;
-} */
-body {
-  font-family: 'Poppins', sans-serif;
-  position: relative;
-}
-
-/* header */
-#header {
-  width: 100%;
-}
-
-.navbar-fixed {
-  position: fixed;
-  z-index: 9999;
-  background-color: white;
-  opacity: 0.7;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
-}
-
-.hamburger-line {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  display: block;
-  height: 2px;
-  width: 30px;
-  /* --tw-bg-opacity: 1; */
-  opacity: 1;
-  background-color: #134e4a;
-}
-
-.hamburger-active > span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.hamburger-active > span:nth-child(2) {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-
-.hamburger-active > span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-/* end header */
-/* hero */
-#hero {
-  background-image: url("../Img/bgAtas.png") !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#hero_img {
-  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
-}
-
-/* end hero */
-/* about */
-#about {
-  background-image: url("../Img/bgTengah.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* end about */
-/* services */
-#services {
-  background-image: url("../Img/bgTengah.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#about_img {
-  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
-}
-
-/* end services */
-#komunitas {
-  background-image: url("../Img/bgTengah.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* sertifikat */
-#sertifikat {
-  background-image: url("../Img/bgTengah.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* end sertifikat */
-/* portfolio */
-#portfolio {
-  background-image: url("../Img/bgTengah.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.kategori1 .checkbox:checked ~ .name {
-  color: #14b8a6;
-}
-
-.kategori2 .checkbox:checked ~ .name {
-  color: #14b8a6;
-}
-
-.name:hover {
-  color: #83cec5;
-}
-
-.portfolio-item-hide {
-  display: none;
-  -webkit-animation: itemDown 0.5s ease;
-          animation: itemDown 0.5s ease;
-}
-
-.portfolio-item-show {
-  display: block;
-  -webkit-animation: showItem 0.5s ease;
-          animation: showItem 0.5s ease;
 }
 
 @-webkit-keyframes showItem {
@@ -180,20 +54,6 @@ body {
   }
 }
 
-/* end portfolio */
-/* contact */
-#contact {
-  background-image: url("../Img/bgBawah.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#contact_img {
-  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
-}
-
-/* end contcat */
-/* keyframes */
 @-webkit-keyframes up-down {
   0% {
     -webkit-transform: translateY(20px);
@@ -216,5 +76,129 @@ body {
   }
 }
 
-/* end keyframes */
+html body {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+html body #header {
+  width: 100%;
+}
+
+html body #header .hamburger-line {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  height: 2px;
+  width: 30px;
+  opacity: 1;
+  background-color: #134e4a;
+}
+
+html body #header .hamburger-active > span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+html body #header .hamburger-active > span:nth-child(2) {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+html body #header .hamburger-active > span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+html body #hero {
+  background-image: url("../Img/bgAtas.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body #hero #hero_img {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+html body #about {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body #about #about_img {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+html body #services {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body #komunitas {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body #sertifikat {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body #portfolio {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body #portfolio .kategori1 .checkbox:checked ~ .name {
+  color: #14b8a6;
+}
+
+html body #portfolio .kategori2 .checkbox:checked ~ .name {
+  color: #14b8a6;
+}
+
+html body #portfolio .name:hover {
+  color: #83cec5;
+}
+
+html body #portfolio .portfolio-item-hide {
+  display: none;
+  -webkit-animation: itemDown 0.5s ease;
+          animation: itemDown 0.5s ease;
+}
+
+html body #portfolio .portfolio-item-show {
+  display: block;
+  -webkit-animation: showItem 0.5s ease;
+          animation: showItem 0.5s ease;
+}
+
+html body #contact {
+  background-image: url("../Img/bgBawah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body #contact_img {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  opacity: 0.7;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
 /*# sourceMappingURL=main.css.map */
