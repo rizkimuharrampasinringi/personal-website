@@ -76,17 +76,17 @@ html {
   }
 }
 
-html body {
+body {
   font-family: 'Poppins', sans-serif;
   position: relative;
   overflow-x: hidden;
 }
 
-html body #header {
+body #header {
   width: 100%;
 }
 
-html body #header .hamburger-line {
+body #header .hamburger-line {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   display: block;
@@ -96,98 +96,98 @@ html body #header .hamburger-line {
   background-color: #134e4a;
 }
 
-html body #header .hamburger-active > span:nth-child(1) {
+body #header .hamburger-active > span:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-html body #header .hamburger-active > span:nth-child(2) {
+body #header .hamburger-active > span:nth-child(2) {
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
 }
 
-html body #header .hamburger-active > span:nth-child(3) {
+body #header .hamburger-active > span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-html body #hero {
+body #hero {
   background-image: url("../Img/bgAtas.png") !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-html body #hero #hero_img {
+body #hero #hero_img {
   animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
 }
 
-html body #about {
+body #about {
   background-image: url("../Img/bgTengah.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-html body #about #about_img {
+body #about #about_img {
   animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
 }
 
-html body #services {
+body #services {
   background-image: url("../Img/bgTengah.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-html body #komunitas {
+body #komunitas {
   background-image: url("../Img/bgTengah.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-html body #sertifikat {
+body #sertifikat {
   background-image: url("../Img/bgTengah.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-html body #portfolio {
+body #portfolio {
   background-image: url("../Img/bgTengah.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-html body #portfolio .kategori1 .checkbox:checked ~ .name {
+body #portfolio .kategori1 .checkbox:checked ~ .name {
   color: #14b8a6;
 }
 
-html body #portfolio .kategori2 .checkbox:checked ~ .name {
+body #portfolio .kategori2 .checkbox:checked ~ .name {
   color: #14b8a6;
 }
 
-html body #portfolio .name:hover {
+body #portfolio .name:hover {
   color: #83cec5;
 }
 
-html body #portfolio .portfolio-item-hide {
+body #portfolio .portfolio-item-hide {
   display: none;
   -webkit-animation: itemDown 0.5s ease;
           animation: itemDown 0.5s ease;
 }
 
-html body #portfolio .portfolio-item-show {
+body #portfolio .portfolio-item-show {
   display: block;
   -webkit-animation: showItem 0.5s ease;
           animation: showItem 0.5s ease;
 }
 
-html body #contact {
+body #contact {
   background-image: url("../Img/bgBawah.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-html body #contact_img {
+body #contact_img {
   animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
 }
 

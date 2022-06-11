@@ -75,5 +75,17 @@ item3.addEventListener('click', () => {
     }
     
 })
+// end kategor
 
-// end kategori
+// nav active
+// const label_id_contact = document.getElementById('label-id-contact');
+// const a_contact = document.getElementById('a-contact');
+// const id_checkbox_contact = document.getElementById('id-checkbox-contact');
+
+// id_checkbox_contact.addEventListener('click', () => {
+//     if (id_checkbox_contact.checked) {
+//       a_contact.classList.add('a-new-group')
+//     } else {
+//       a_contact.classList.remove('a-new-group')
+//     }
+// })
